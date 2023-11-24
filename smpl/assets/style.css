@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding:0 ;
+    box-sizing: border-box;
+}
+body{
+    height: 200vh;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    font-size: 20px;
+    padding:0 50px 0 50px ;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    
+}
+nav ul li{
+    padding-right: 25px;
+}
+nav ul li a{
+    text-decoration: underline;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+}
+main div{
+    width: 250px;
+}
+main div p:nth-child(1){
+    font-size: 20px;
+    color: black;
+    padding-bottom: 30px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+main div .p1{
+    font-size: 16px;
+    color: black;
+    padding-top: 30px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+main div h1{
+    font-size: 75px;
+    line-height: 60px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+main img{
+    width: 320px;
+}
+.aquadecor{
+    position: absolute;
+    width: 100px;
+    top: 60%;
+    right:35%
+}
+.orangedecor{
+   
+width: 100px;
+position: absolute;
+top: 22%;
+right: 12%;
+}
+.firstarrow{
+    width: 50px;
+    position: absolute;
+    top: 25%;
+    right: 35%;
+}
+.secondarrow{
+    width: 50px;
+    position: absolute;
+    top:62% ;
+    right:14% ;
+
+}
+article{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-top: 70px;   
+}
+.main2{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 140px;
+    
+}
+.pctrboxes {
+    flex-direction: column;
+    text-align: center;
+}
+.pctrboxes img{
+    width: 150px;
+}
+.texts{
+    padding-top: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.main3{
+    margin-top: 100px;
+}
+.main3 h2{
+    margin-top: 1px;
+   
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container{
+    display: grid;
+    justify-content: center;
+   grid-template-areas: 
+   "one two three"
+   "four five six";
+   gap:90px;
+   margin-right: 90px;
+}
+section{
+    margin-top: 100px;
+}
+section h2{
+    text-align: center;
+    margin-top: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 35px;
+}
+.container2{
+    display: flex;
+    justify-content: space-around;
+    align-items:center
+}
+.container2 .px1 img{
+    margin-top: 50px;
+    width: 240px;
+    transition: all 2s ease-in-out;
+}
+.container2 .px1 img:hover{
+    box-shadow: 0 0 20px 20px rgb(153, 180, 203);
+    transform: scale(1.1);
+}
+footer{
+    width: 100%;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.lastcontainer{
+    width: 300px;
+    /* display: flex;
+    flex-direction: column; */
+  
+    margin-left: 90px;
+}
+.lastcontainer h2,p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top:20px ;
+}
+.lastcontainer h2{
+    font-size: 30px;
+    font-weight: bolder;
+}
+.lastcontainer p{
+    line-height: 20px;
+}
+.lastcontainer img{
+    padding-top:20px ;
+    width: 30px;
+}
+.lastcontainer2{
+    width: 200px;
+    margin-right: 400px;
+}
+.lastcontainer2 input{
+    width: 500px;
+    height: 70px;
+    border-radius: 5px;
+    background-color: #F3F3F3;
+    border: 0 solid #F3F3F3;
+    margin-bottom: 15px;
+}
+.lastcontainer2 textarea{
+    border-radius: 5px;
+    background-color: #F3F3F3;
+    border: 0 solid #F3F3F3
+}
+.lastcontainer2 input::placeholder,textarea::placeholder{
+    padding: 40px;
+    color: black;
+    font-size: 13px;
+}
+.lastcontainer2 button{
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    color: aliceblue;
+    width: 180px;
+    font-size: 15px;
+}
+
+@media screen and (max-width:375px){
+   header nav div{
+    text-align: center;
+   } 
+   header nav ul{
+    visibility: hidden;
+   }
+   main .box1{
+    text-align: center;
+    padding-top: 20px;
+   }
+    main img{
+        flex-direction: column;
+    }
+    .main3 .container{
+        display: grid;
+        justify-content: center;
+        grid-template-areas:
+        "one"
+        "two"
+        "three"
+        "four"
+        "five"
+        "six";
+    }
+
+}
